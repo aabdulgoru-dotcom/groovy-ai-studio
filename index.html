@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101426">
+<title>GROOVY AI STUDIO</title>
+<style>
+:root{--bg:#0b1020;--panel:#151d33;--panel2:#1b2742;--text:#f4f6ff;--muted:#aab4d0;--accent:#8b7cff;--accent2:#38c8d8;--line:#2b3654}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0%,#25245a 0,transparent 32%),var(--bg);color:var(--text);font:16px system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:900px;margin:auto;padding:20px 15px 48px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:11px}.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-weight:900;color:#081020;font-size:20px}
+h1{font-size:20px;margin:0;letter-spacing:.4px}.sub{font-size:12px;color:var(--muted);margin-top:3px}
+.pill{border:1px solid #4c5680;color:#c8c4ff;padding:6px 10px;border-radius:30px;font-size:11px}
+.hero{background:linear-gradient(130deg,#28265b,#172c4b 70%,#123c4a);border:1px solid #444d7c;border-radius:22px;padding:23px 20px;margin-bottom:18px}
+.hero h2{font-size:25px;line-height:1.2;margin:0 0 9px}.hero p{color:#d3dcf4;margin:0;line-height:1.55;font-size:14px}
+.section{font-size:16px;margin:24px 2px 12px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:17px;padding:16px;min-height:150px}
+.ico{font-size:25px}.card h3{margin:9px 0 5px;font-size:16px}.card p{margin:0 0 13px;color:var(--muted);font-size:12px;line-height:1.45}
+a.btn,button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:0;border-radius:11px;padding:11px 13px;background:linear-gradient(100deg,var(--accent),#6e9cff);color:white;font-weight:700;font-size:13px;cursor:pointer}
+.secondary{background:#273451!important;border:1px solid #465477!important;color:#f4f6ff}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:16px;margin-top:12px}
+label{display:block;font-size:13px;color:#dbe2fa;margin:10px 0 7px}
+textarea,input[type=text]{width:100%;background:#0d1427;border:1px solid #354363;border-radius:11px;padding:12px;color:white;font:14px system-ui}
+textarea{min-height:115px;resize:vertical}
+.row{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}
+.note{font-size:12px;line-height:1.55;color:var(--muted)}
+.filebox{border:1px dashed #58668e;border-radius:12px;padding:14px;text-align:center;background:#0e172b}
+input[type=file]{max-width:100%;color:var(--muted);font-size:12px}
+#filelist{font-size:12px;color:#cbd5f0;margin-top:8px;overflow-wrap:anywhere}
+footer{margin-top:24px;color:#8e9ab9;font-size:11px;text-align:center;line-height:1.6}
+@media(min-width:650px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:30px}.hero h2{font-size:31px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+ <div class="brand"><div class="logo">G</div><div><h1>GROOVY AI STUDIO</h1><div class="sub">Your mobile movie production workspace</div></div></div>
+ <span class="pill">MOBILE STUDIO</span>
+</header>
+<section class="hero">
+ <h2>अपनी अगली 3D मूवी बनाना शुरू करें</h2>
+ <p>कहानी लिखें, AI टूल खोलें, अपने मीडिया की सूची देखें और YouTube के लिए तैयारी करें — एक ही डैशबोर्ड से।</p>
+</section>
+
+<h2 class="section">आपके AI टूल्स</h2>
+<div class="grid">
+ <article class="card"><div class="ico">✍️</div><h3>ChatGPT — Story Writer</h3><p>कहानी, सीन, डायलॉग और वीडियो प्रॉम्प्ट लिखें।</p><a class="btn" href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT खोलें ↗</a></article>
+ <article class="card"><div class="ico">🎬</div><h3>Google Flow / Veo</h3><p>Google Flow में AI वीडियो बनाने का काम करें। उपलब्धता आपके Google खाते और क्षेत्र पर निर्भर है।</p><a class="btn" href="https://labs.google/fx/tools/flow" target="_blank" rel="noopener">Flow खोलें ↗</a></article>
+ <article class="card"><div class="ico">✂️</div><h3>VN Video Editor</h3><p>फोन में VN खोलकर क्लिप जोड़ें, कट करें और एडिट करें।</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.frontrow.vlog" target="_blank" rel="noopener">VN देखें ↗</a></article>
+ <article class="card"><div class="ico">🖼️</div><h3>Google Photos</h3><p>अपनी फोटो और वीडियो गैलरी खोलें।</p><a class="btn" href="https://photos.google.com/" target="_blank" rel="noopener">Photos खोलें ↗</a></article>
+ <article class="card"><div class="ico">▶️</div><h3>YouTube Studio</h3><p>अपने चैनल के वीडियो और आँकड़े मैनेज करें।</p><a class="btn" href="https://studio.youtube.com/" target="_blank" rel="noopener">Studio खोलें ↗</a></article>
+ <article class="card"><div class="ico">📁</div><h3>मीडिया चुनें</h3><p>नीचे अपने फोन से फोटो/वीडियो चुनकर इस सेशन में उनकी सूची देखें।</p><a class="btn secondary" href="#media">मीडिया सेक्शन</a></article>
+</div>
+
+<h2 class="section">कहानी और प्रॉम्प्ट नोटपैड</h2>
+<section class="panel">
+ <label for="movie">मूवी का नाम</label><input id="movie" type="text" placeholder="जैसे: उड़ने वाली जादुई बिल्ली">
+ <label for="idea">अपना आइडिया लिखें</label><textarea id="idea" placeholder="यहाँ अपनी कहानी का आइडिया लिखें..."></textarea>
+ <div class="row"><button onclick="makePrompt()">ChatGPT के लिए प्रॉम्प्ट बनाएँ</button><button class="secondary" onclick="copyPrompt()">कॉपी करें</button></div>
+ <label for="prompt">तैयार प्रॉम्प्ट</label><textarea id="prompt" placeholder="आपका प्रॉम्प्ट यहाँ बनेगा..." readonly></textarea>
+ <p class="note">यह नोटपैड आपके ब्राउज़र में ही काम करता है। ChatGPT में प्रॉम्प्ट भेजने के लिए कॉपी करके ChatGPT में पेस्ट करें।</p>
+</section>
+
+<h2 class="section" id="media">फोन से फोटो और वीडियो चुनें</h2>
+<section class="panel">
+ <div class="filebox"><input id="mediaInput" type="file" accept="image/*,video/*" multiple><div id="filelist">अभी कोई फाइल नहीं चुनी गई।</div></div>
+ <p class="note">फाइलें केवल चुनने के लिए दिखाई जाती हैं; यह पेज उन्हें किसी सर्वर पर अपलोड नहीं करता। चुनी गई फाइलें पेज बंद करने पर हट जाएँगी।</p>
+</section>
+
+<h2 class="section">अगले चरण</h2>
+<section class="panel">
+ <p class="note">1. कहानी ChatGPT में तैयार करें।<br>2. सीन के इमेज/वीडियो Google Flow में बनाएँ।<br>3. तैयार क्लिप फोन में सेव करें।<br>4. VN Editor में क्लिप जोड़कर एडिट करें।<br>5. YouTube Studio से वीडियो अपलोड करें।</p>
+</section>
+<footer>GROOVY AI STUDIO • यह एक शुरुआती डैशबोर्ड है। यह ChatGPT, Flow या VN के अंदरूनी काम को अपने आप नियंत्रित नहीं करता। पासवर्ड या API key इस HTML फाइल में न डालें।</footer>
+</div>
+<script>
+function makePrompt(){
+ const title=document.getElementById('movie').value.trim()||'मेरी 3D हिंदी कार्टून मूवी';
+ const idea=document.getElementById('idea').value.trim();
+ document.getElementById('prompt').value=`मेरी मूवी "${title}" के लिए एक दमदार, तेज रफ्तार हिंदी 3D एनिमेशन कहानी तैयार करो। शुरुआत में 20-25 सेकंड का रहस्यमयी हुक हो। कहानी में साफ किरदार, भावनाएँ, सस्पेंस और लगातार आगे बढ़ती घटनाएँ हों। हर सीन के लिए अलग-अलग कॉपी करने योग्य ब्लॉक में अंग्रेज़ी इमेज प्रॉम्प्ट, कैमरा एंगल/मूवमेंट, वीडियो एक्शन और हिंदी डायलॉग दो। किरदारों का चेहरा और कपड़े सभी सीन में एक जैसे रखें।\n\nमेरा आइडिया:\n${idea||'(यहाँ अपना आइडिया जोड़ें)'}`;
+}
+async function copyPrompt(){
+ const p=document.getElementById('prompt');
+ if(!p.value) makePrompt();
+ try{await navigator.clipboard.writeText(document.getElementById('prompt').value);alert('प्रॉम्प्ट कॉपी हो गया। अब ChatGPT में पेस्ट करें।')}
+ catch(e){document.getElementById('prompt').select();alert('प्रॉम्प्ट चुन लिया गया है। Copy दबाएँ।')}
+}
+document.getElementById('mediaInput').addEventListener('change',e=>{
+ const files=[...e.target.files];
+ document.getElementById('filelist').textContent=files.length?files.map(f=>`${f.name} (${(f.size/1024/1024).toFixed(1)} MB)`).join('\n'):'अभी कोई फाइल नहीं चुनी गई।';
+});
+</script>
+</body>
+</html>
